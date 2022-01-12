@@ -187,22 +187,6 @@ Rappelez-vous comment vous faisiez pour développer une petite application Web..
 
 Il était donc *urgent* d'industrialiser les phases de développement en réduisant tous ces postes de dépenses de temps.
 
-## [Labs] Déploiement d’une infrastructure Kubernetes
-
-### Environnement
-
-**Système d'exploitation:** Debian
-
-**Processeur:** 2vCPU
-
-**Mémoire:** 2 Go
-
-**Stockage:** 20Go
-
-**Instances:** 3 instances Kubernetes + 1 instance NFS Server
-
-## [Labs] Création manuelle de ressources
-
 ## En savoir davantage
 
 [[CNCF] Qu'est ce que Kubernetes](https://kubernetes.io/fr/docs/concepts/overview/what-is-kubernetes/)
