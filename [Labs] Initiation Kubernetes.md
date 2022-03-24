@@ -31,3 +31,24 @@ Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique prop
   - [ ] Type de service: **NodePort**
   - [ ] Récupérer le port utilisé sur la machine hôte
 - [ ] Accéder au service whoami depuis votre poste client
+
+## 2 - Stockage persistant
+
+Dans cet exercice, vous allez déployer un *Deployment* propulsant une base de données sur un *Stockage Persistant*.
+
+- [ ] Création d'un *déploiement* nommé mariadb
+  - [ ] Utilisant l'image **mariadb:latest**
+  - [ ] Utilisant le port interne **3306/TCP**
+  - [ ] Créer un compte utilisateur nommé **wordpress**
+  - [ ] Créer un mot de passe pour l'utilisateur **wordpress**
+  - [ ] Le mot de passe *root* de MariaDB devra etre généré automatiquement
+  - [ ] Créer une base de données nommée **wordpress**
+- [ ] Création d'un service nommé **mariadb**
+  - [ ] Ecoutant sur le port **56100** 
+  - [ ] Lié au déploiement **mariadb**
+  - [ ] Type de Service: **ClusterIP**
+- [ ] Création d'un *Pod* ephémaire de debug
+  - [ ] Utilisant l'image **ubuntu:latest**
+  - [ ] Installer le paquet **mariadb-client**
+  - [ ] Installer un client **mariadb**
+  - [ ] Réaliser une connexion pour valider le bon fonctionnement
