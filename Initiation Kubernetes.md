@@ -53,19 +53,19 @@ Mais bien que très facile d'utilisation, *Docker Swarm* manque de souplesse. À
 
 *Kubernetes* peut sembler difficile à aborder à cause principalement du nombre important de nouveaux termes que la solution apporte. Une fois ces nouveaux mots appréhendés, la technologie devient bien plus abordable.
 
-| Terme                     | Signification                                          |
-|:------------------------- |:------------------------------------------------------ |
-| container                 | Ressource exécutant une application                    |
-| pod                       | Groupement d'un ou plusieurs conteneurs                |
-| deployment                | Orchestre les *pods* et *replicaSets*                  |
-| deamonset                 | S'assure d'avoir un pod sur chaque noeud               |
-| statefullset              | [legacy] S'assure de n'avoir qu'un seul pod            |
-| service                   | Expose votre application sur le réseau du cluster      |
-| ingress                   | Permet d'exposer un service en externe (#ReverseProxy) |
-| persistent volumes        | Défini un accès au stockage                            |
-| persistent volumes claims | Demande d'allocation de stockage                       |
-| configMaps                | stockage clé-valeur non confidentiel                   |
-| secrets                   | stockage clé-valeur confidentiel                       |
+| Terme                     | Signification                                            |
+|:------------------------- |:-------------------------------------------------------- |
+| container                 | Ressource exécutant une application                      |
+| pod                       | Groupement d'un ou plusieurs conteneurs                  |
+| deployment                | Orchestre les *pods* et *replicaSets*                    |
+| deamonset                 | S'assure d'avoir un pod sur chaque noeud                 |
+| statefulset               | Gère un ou plusieurs pod(s) de manière ordonné et unique |
+| service                   | Expose votre application sur le réseau du cluster        |
+| ingress                   | Permet d'exposer un service en externe (#ReverseProxy)   |
+| persistent volumes        | Défini un accès au stockage                              |
+| persistent volumes claims | Demande d'allocation de stockage                         |
+| configMaps                | stockage clé-valeur non confidentiel                     |
+| secrets                   | stockage clé-valeur confidentiel                         |
 
 ![Vocabulaire Kubernetes](images/Kubernetes%20Objects.png)
 
