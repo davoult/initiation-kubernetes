@@ -23,13 +23,13 @@ Chaque participant a accès à son environnement, il est composant d'un cluster 
 Dans cet exercice, vous allez déployer un *conteneur* dans un *POD* unique propulsé par un simple *déploiement*.
 
 - [ ] Création d'un *deploiement* nommé whoami
-  - [ ] Utilisant l'image **containous/whoami**
+  - [ ] Utilisant l'image **traefik/whoami**
   - [ ] Utilisant le port interne **80/TCP**
 - [ ] Création d'un service nommé **whoami**
   - [ ] Ecoutant sur le port **80**
   - [ ] Lié au deploiement **whoami**
-  - [ ] Type de service: **NodePort**
-  - [ ] Récupérer le port utilisé sur la machine hôte
+  - [ ] Type de service: **LoadBalancer**
+  - [ ] Récupérer l'adresse IP externe
 - [ ] Accéder au service whoami depuis votre poste client
 
 ## 2 - Stockage persistant
